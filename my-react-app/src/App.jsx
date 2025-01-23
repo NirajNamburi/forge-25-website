@@ -185,6 +185,14 @@ const App = () => {
                       label: "VIN",
                       value: selectedCar.vin ?? "Not available",
                     },
+                    {
+                      label: "Color",
+                      value: selectedCar.color ?? "Not specified",
+                    },
+                    {
+                      label: "Fuel Type",
+                      value: selectedCar.fuel_type ?? "Not specified",
+                    },
                   ].map(({ label, value }) => (
                     <div key={label} className="bg-gray-100 p-3 rounded-lg">
                       <div className="text-sm text-gray-600">{label}</div>

@@ -72,6 +72,8 @@ export const CarCard = ({ car, onClick }) => {
   const price = car.price?.toLocaleString() ?? "Price not available";
   const mileage = car.mileage?.toLocaleString() ?? "Mileage not available";
   const transmission = car.transmission ?? "Transmission not specified";
+  const color = car.color ?? "Color not specified";
+  const fuelType = car.fuel_type ?? "Fuel type not specified";
 
   return (
     <div
@@ -97,6 +99,9 @@ export const CarCard = ({ car, onClick }) => {
           <div className="text-gray-500">
             {mileage} miles | {transmission}
           </div>
+        </div>
+        <div className="text-gray-500 mt-2">
+          {color} | {fuelType}
         </div>
       </div>
     </div>
